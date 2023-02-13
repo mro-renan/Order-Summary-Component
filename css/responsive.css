@@ -1,0 +1,80 @@
+@media (max-width: 1440px) {
+    #backgroundDesktop {
+        display: block;
+    }
+}
+
+@media (max-width: 1200px) {
+    #container #boxOrder {
+        width: 50%;
+        height: auto;
+    }
+}
+
+@media (max-width: 900px) {
+    #container #boxOrder {
+        width: 70%;
+        height: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    #container #boxOrder {
+        width: 90%;
+        height: auto;
+    }
+
+    #container #boxOrder #orderContent #orderTitle {
+        font-weight: 900;
+        margin: .75rem 0;
+    }
+    
+    #container #boxOrder #orderContent #orderDescription {
+        font-size: 1rem;
+    }
+    
+    #container #boxOrder #orderContent #planOfOrder {
+        margin: .9375rem 0;
+    }
+
+    #container #boxOrder #orderContent #planOfOrder #titlePlan {
+        font-size: 1rem;
+    }
+    
+    #container #boxOrder #orderContent #planOfOrder #pricePlan {
+        font-size: 1rem;
+    }
+    
+    #container #boxOrder #orderContent #planOfOrder #changePlan {
+        font-size: .8438rem;
+        font-weight: 900;
+    }
+}
+
+@media (max-width: 375px) {
+    #backgroundMobile {
+        display: block;
+    }
+
+    #container #boxOrder {
+        width: 90%;
+        height: auto;
+    }
+
+    section {
+        display: flex;
+    }
+
+    #container #boxOrder #orderContent #planOfOrder #titlePlan {
+        font-size: .9063rem;
+    }
+    
+    #container #boxOrder #orderContent #planOfOrder #pricePlan {
+        font-size: .8438rem;
+    }
+    
+    #container #boxOrder #orderContent #planOfOrder #changePlan {
+        font-size: .6875rem;
+        /* font-weight: 900; */
+    }
+}

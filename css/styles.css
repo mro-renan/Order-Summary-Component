@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+    /*coloPrimary*/
+    --paleBlue: hsl(225, 100%, 94%);
+    --brightBlue: hsl(245, 75%, 52%);
+
+    /*colorNeutral*/
+    --varyPaleBlue: hsl(225, 100%, 98%);
+    --blueShare: hsl(224, 23%, 55%);
+    --darkBlue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Red Hat Display', Arial;
+    background-color: var(--paleBlue);
+    box-sizing: border-box;
+}
+
+#backgroundMobile {
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+    height: auto;
+    display: none;
+}
+
+#backgroundDesktop {
+    z-index: -1;
+    position: fixed;
+    width: 100vw;
+    height: auto;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#container #boxOrder {
+    background-color: #fff;
+    box-shadow: 0rem .875rem 1.875rem hsl(223, 22%, 87%);
+    border-radius: 1.25rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: auto;
+}
+
+#container #boxOrder #illustration {
+    border-top-left-radius: 1.25rem;
+    border-top-right-radius: 1.25rem;
+    width: 100%;
+    height: auto;
+}
+
+#container #boxOrder #orderContent {
+    text-align: center;
+    align-items: center;
+    padding: 1.875rem;
+}
+
+#container #boxOrder #orderContent #orderTitle {
+    font-weight: 900;
+    margin: 1.25rem 0;
+}
+
+#container #boxOrder #orderContent #orderDescription {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #727272;
+}
+
+#container #boxOrder #orderContent #planOfOrder {
+    background-color: var(--varyPaleBlue);
+    margin: 1.875rem 0;
+    padding: 1.25rem 1.875rem;
+    border-radius: 1.25rem;
+    text-align: center;
+    display: flex;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#container #boxOrder #orderContent #planOfOrder #componente {
+    display: flex;
+    align-items: center;
+}
+
+#container #boxOrder #orderContent #planOfOrder #planOffert {
+    margin-left: 1.125rem;
+}
+
+#container #boxOrder #orderContent #planOfOrder #titlePlan {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+#container #boxOrder #orderContent #planOfOrder #pricePlan {
+    color: #727272;
+    font-size: 1.25rem;
+    font-weight: normal;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#container #boxOrder #orderContent #planOfOrder #changePlan {
+    color: var(--brightBlue);
+    text-decoration: underline;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin: auto 0;
+}
+
+#container #boxOrder #orderContent #buttonPayment {
+    background-color: var(--brightBlue);
+    box-shadow: 0rem .75rem 2.5rem var(--blueShare);
+    border-radius: .625rem;
+    transition: 0.2s;
+    font-weight: 700;
+    font-size: 1.125rem;
+    color: #fff;
+    padding: 1.2rem 0;
+    margin: 0 0 1.875rem;
+    border: none;
+    width: 100%;
+
+}
+
+#container #boxOrder #orderContent #buttonPayment:hover {
+    transform: scale(1.07);
+    background-color: var(--darkBlue);
+}
+
+#container #boxOrder #orderContent #cancelOrder {
+    color: #727272;
+    margin: .3125rem;
+    font-size: 1rem;
+    font-weight: 700;
+}
