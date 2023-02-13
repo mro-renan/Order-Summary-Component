@@ -2,6 +2,10 @@
     #backgroundDesktop {
         display: block;
     }
+    
+    #container #boxOrder {
+        width: 40%;
+    }        
 }
 
 @media (max-width: 1200px) {
